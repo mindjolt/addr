@@ -41,9 +41,10 @@ export default class Merkle extends Command {
     const leaves = addresses.map(hashAddress);
     const merkleTree = new MerkleTree(leaves, (v: Buffer) => MerkleTree.bufferify(keccak256(v)), { sortPairs: true });
 
-    const proofs: Record<string, string[]> = {};
+    type AddressProof = { address: string; proof: string[]; }
+    const proofs: Array<AddressProof> = [];
     for (const address of addresses) {
-      proofs[address] = merkleTree.getHexProof(hashAddress(address));
+      proofs.push({ address, proof: merkleTree.getHexProof(hashAddress(address)) });
     }
     const rv = {
       root: merkleTree.getHexRoot(),
