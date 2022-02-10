@@ -19,7 +19,7 @@ $ npm install -g @mindjolt/addr
 $ addr COMMAND
 running command...
 $ addr (--version)
-@mindjolt/addr/0.0.1 darwin-x64 node-v16.13.2
+@mindjolt/addr/0.0.3 darwin-x64 node-v16.13.2
 $ addr --help [COMMAND]
 USAGE
   $ addr COMMAND

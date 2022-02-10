@@ -1,6 +1,6 @@
 {
   "name": "@mindjolt/addr",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Blockchain address CLI utilities",
   "author": "Jesus Lopez @jlopez",
   "bin": {
