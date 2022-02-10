@@ -11,14 +11,18 @@ oclif example Hello World CLI
 
 <!-- toc -->
 * [Usage](#usage)
-* [Commands](#commands)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
 ```sh-session
 $ npm install -g @mindjolt/addr
-$ addr generate -c 20
-$ addr generate -c 20 | addr merkle --json
+$ addr COMMAND
+running command...
+$ addr (--version)
+@mindjolt/addr/0.0.1 darwin-x64 node-v16.13.2
+$ addr --help [COMMAND]
+USAGE
+  $ addr COMMAND
 ...
 ```
 <!-- usagestop -->
